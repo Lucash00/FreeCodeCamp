@@ -1,0 +1,328 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Encuesta</h1>
+        <p id="description">¡Nos encantaría escuchar tus comentarios!</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <!-- Nombre -->
+            <label id="name-label" for="name">Nombre:</label>
+            <input 
+                id="name" 
+                type="text" 
+                placeholder="Ingresa tu Nombre" 
+                required 
+            >
+            
+            <!-- Email -->
+            <label id="email-label" for="email">Email:</label>
+            <input 
+                id="email" 
+                type="email" 
+                placeholder="Ingresa tu Email" 
+                required 
+            >
+            
+            <!-- Edad -->
+            <label id="number-label" for="number">Edad:</label>
+            <input 
+                id="number" 
+                type="number" 
+                placeholder="Ingresa tu Edad" 
+                min="12" 
+                max="100" 
+                required 
+            >
+            
+            <!-- Rol -->
+            <label for="dropdown">Tu rol actual:</label>
+            <select id="dropdown" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesional">Profesional</option>
+            </select>
+            
+            <!-- Radio Buttons: Recomendación -->
+            <p>¿Recomendarías freeCodeCamp a un amigo?</p>
+            <label for="definitivamente">
+                Definitivamente
+                <input 
+                    type="radio" 
+                    name="recommendation" 
+                    value="definitivamente" 
+                    required
+                >
+            </label>
+            <label for="tal_vez">
+                Tal vez
+                <input 
+                    type="radio" 
+                    name="recommendation" 
+                    value="tal vez"
+                >
+            </label>
+            <label for="no_estoy_seguro">
+                No estoy seguro
+                <input 
+                    type="radio" 
+                    name="recommendation" 
+                    value="no estoy seguro"
+                >
+            </label>
+
+            <!-- Dropdown: Característica favorita -->
+            <label for="favorite-feature">¿Cuál es tu característica favorita de freeCodeCamp?</label>
+            <select id="favorite-feature" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="proyectos_frontend">Proyectos de Front-end</option>
+                <option value="proyectos_backend">Proyectos de Back-end</option>
+                <option value="visualizacion_datos">Visualización de Datos</option>
+                <option value="desafios">Desafíos</option>
+                <option value="comunidad_open_source">Comunidad Open Source</option>
+                <option value="gitter_ayuda">Gitter Ayuda</option>
+                <option value="videos">Videos</option>
+                <option value="meetups_ciudad">Meetups en la ciudad</option>
+                <option value="wiki">Wiki</option>
+                <option value="foro">Foro</option>
+                <option value="cursos_adicionales">Cursos Adicionales</option>
+            </select>
+
+            <!-- Checkboxes: Mejoras deseadas -->
+            <p>¿Qué te gustaría que mejoraran? (Selecciona todas las que apliquen)</p>
+            <label for="proyectos_frontend">
+                Proyectos de Front-end
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="proyectos_frontend"
+                >
+            </label>
+            <label for="proyectos_backend">
+                Proyectos de Back-end
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="proyectos_backend"
+                >
+            </label>
+            <label for="visualizacion">
+                Visualización de Datos
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="visualizacion_datos"
+                >
+            </label>
+            <label for="desafios">
+                Desafíos
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="desafios"
+                >
+            </label>
+            <label for="comunidad">
+                Comunidad Open Source
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="comunidad_open_source"
+                >
+            </label>
+            <label for="gitter">
+                Gitter Ayuda
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="gitter_ayuda"
+                >
+            </label>
+            <label for="videos">
+                Videos
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="videos"
+                >
+            </label>
+            <label for="meetups">
+                Meetups en la ciudad
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="meetups_ciudad"
+                >
+            </label>
+            <label for="wiki">
+                Wiki
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="wiki"
+                >
+            </label>
+            <label for="foro">
+                Foro
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="foro"
+                >
+            </label>
+            <label for="cursos_adicionales">
+                Cursos Adicionales
+                <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="cursos_adicionales"
+                >
+            </label>
+            
+            <!-- Comentarios -->
+            <label for="comentarios">Comentarios Adicionales:</label>
+            <textarea 
+                id="textarea" 
+                rows="4" 
+                placeholder="Tu comentario..."
+            ></textarea>
+            
+            <!-- Botón de envío -->
+            <button id="submit" type="submit">Entregar</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #333;
+        background-image: url('https://selftaughttxg.com/static/94cc3de2b6dc0b9a6a02a8b76cee32fe/1cfc2/FreeCodeCamp_logo-02.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;  
+    position: relative;
+    min-height: 100vh;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://selftaughttxg.com/static/94cc3de2b6dc0b9a6a02a8b76cee32fe/1cfc2/FreeCodeCamp_logo-02.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background: rgba(255, 255, 255, 0.2); /* Capa semi-transparente */
+    z-index: -1;  /* Asegura que la imagen esté detrás del contenido */
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(76, 175, 80, 0.25); /* Capa semi-transparente */
+    z-index: 1; /* Esto asegura que la capa esté encima de la imagen, pero detrás del contenido */
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5%;
+    background: rgba(76, 175, 80, 0.9); 
+    color: white;
+    z-index: 2;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 400px;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+
+form label input[type="radio"], 
+form label input[type="checkbox"] {
+    margin-left: auto; 
+    margin-right: 0; 
+}
+
+label {
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    justify-self: space-between;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    max-width: 100%; 
+}
+
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+
+** end of undefined **
+

@@ -1,0 +1,163 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albert Einstein - Página de Homenaje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Albert Einstein</h1>
+    <p id="tribute-info">Albert Einstein, uno de los físicos más influyentes de todos los tiempos, revolucionó la ciencia con su teoría de la relatividad y contribuciones clave a la mecánica cuántica.</p>
+    <figure id="img-div">
+      <img 
+        id="image" 
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" 
+        alt="Retrato de Albert Einstein"
+      >
+      <figcaption id="img-caption">Albert Einstein, fotografiado en 1921.</figcaption>
+    </figure>
+    <section>
+      <h2>Esta es una cronología de la vida de Albert Einstein:</h2>
+      <ul>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Infancia" target="_blank">1879</a></strong> - Nace el 14 de marzo en Ulm, Alemania. Era hijo de Hermann Einstein, un comerciante, y Pauline Koch.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Infancia" target="_blank">1880</a></strong> - Su familia se muda a Múnich, donde Hermann fundó una empresa de equipamiento eléctrico.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Juventud" target="_blank">1894</a></strong> - La familia se traslada a Italia debido a problemas económicos. Albert permanece en Alemania para continuar sus estudios.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Juventud" target="_blank">1895</a></strong> - Falla el examen de ingreso al Politécnico de Zúrich debido a su bajo rendimiento en humanidades.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Juventud" target="_blank">1900</a></strong> - Se gradúa como profesor de física y matemáticas en el Politécnico de Zúrich.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Equivalencia_masa-energía" target="_blank">1905</a></strong> - Publica su teoría de la relatividad especial, que incluye la famosa fórmula <em>E = mc²</em>, revolucionando el concepto de masa y energía.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Relatividad_general" target="_blank">1915</a></strong> - Completa la teoría de la relatividad general, que describe cómo la gravedad afecta el espacio y el tiempo.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Reconocimiento_p%C3%BAblico" target="_blank">1919</a></strong> - Observaciones de un eclipse solar confirman la curvatura de la luz predicha por su teoría, lo que le da fama mundial.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Premio_Nobel" target="_blank">1921</a></strong> - Recibe el Premio Nobel de Física por su explicación del efecto fotoeléctrico, que ayudó a establecer la teoría cuántica.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Madurez" target="_blank">1933</a></strong> - Emigra a Estados Unidos para escapar de la persecución nazi y comienza a trabajar en el Instituto de Estudios Avanzados de Princeton.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Proyecto_Manhattan" target="_blank">1939</a></strong> - Firma una carta a Franklin D. Roosevelt alertando sobre el potencial militar de la fisión nuclear, lo que contribuye al inicio del Proyecto Manhattan.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Madurez" target="_blank">1940</a></strong> - Obtiene la ciudadanía estadounidense, aunque mantiene su oposición al uso de armas nucleares.
+        </li>
+        <li>
+          <strong><a href="https://es.wikipedia.org/wiki/Albert_Einstein#Muerte" target="_blank">1955</a></strong> - Fallece el 18 de abril en Princeton, Nueva Jersey, dejando un legado científico imborrable.
+        </li>
+      </ul>
+    </section>
+    <p>
+      Conoce más sobre la vida de Albert Einstein en 
+      <a id="tribute-link" href="https://es.wikipedia.org/wiki/Albert_Einstein" target="_blank" >Wikipedia</a>.
+    </p>
+  </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+  color: #333;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#img-div {
+  margin: 20px 0;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+strong {
+  color: #0056b3;
+}
+
+#tribute-link a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tribute-link a:hover {
+  text-decoration: underline;
+}
+#tribute-info {
+  text-align: justify;
+  text-justify: inter-word;
+}
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+
+** end of undefined **
+

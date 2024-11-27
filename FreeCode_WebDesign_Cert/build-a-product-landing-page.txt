@@ -1,0 +1,145 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Aterrizaje</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header id="header">
+      <img id="header-img" src="https://www.tonica.la/img/2021/07/30/rick-astley-supera-mil-millones-de-reproducciones-en-youtube_1.jpg?__scale=w:150,h:150,t:2" alt="Logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#form">Formulario</a>
+        <a class="nav-link" href="#footer">Pie de Página</a>
+      </nav>
+    </header>
+
+
+    <section>
+      <h2>Video de Producto</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de Producto" width="1000" height="500" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+
+    <section>
+      <h2>Suscríbete</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <label for="email">Correo Electrónico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Introduce tu correo electrónico"
+          required
+        />
+        <input type="submit" id="submit" value="Enviar" />
+      </form>
+    </section>
+
+
+    <footer id="footer">
+      <p>&copy; 2024 Página de Producto</p>
+    </footer>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 50px;
+  height: auto;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #61de00;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+#video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="email"],
+input[type="submit"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="email"] {
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #61de00;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4e9f00;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+
+** end of undefined **
+
