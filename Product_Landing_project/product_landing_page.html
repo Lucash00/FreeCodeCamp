@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Producto</title>
+    <link rel="stylesheet" href="product_landing_page.css" />
+  </head>
+  <body>
+
+    <header id="header">
+      <img id="header-img" src="https://img.freepik.com/vector-gratis/plantilla-diseno-logotipo-verificacion-humana_474888-1825.jpg" alt="Logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#benefits">Características</a>
+        <a class="nav-link" href="#pricing">Precio</a>
+        <a class="nav-link" href="#form">Suscribete</a>
+        <a class="nav-link" href="#footer">Pie de Página</a>
+      </nav>
+    </header>
+
+    <!-- Sección de Video -->
+    <section id="video-section">
+      <h2>Video de Producto</h2>
+      <iframe 
+        id="video" 
+        width="1128" 
+        height="635" 
+        src="https://www.youtube.com/embed/5Peo-ivmupE" 
+        title="Lorem ipsum video - Dummy video for your website" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="benefits">
+      <h2>Características Destacadas</h2>
+      <div class="benefit-item">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/552/484/non_2x/premium-quality-product-100-percen-original-logo-template-illustration-free-vector.jpg" alt="Material Premium" class="benefit-logo" />
+        <div class="benefit-text">
+          <h3>Materiales Premium</h3>
+          <p>Nuestros trombones utilizan el latón más brillante, obtenido localmente. Esto aumentará la longevidad de tu compra.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <img src="https://as2.ftcdn.net/v2/jpg/05/08/20/39/1000_F_508203964_E0YAPliSlsfeUPcvj8HttTO02KbL6bAg.jpg" alt="Envío Rápido" class="benefit-logo" />
+        <div class="benefit-text">
+          <h3>Envío Rápido</h3>
+          <p>Nos aseguramos de que recibas tu trombón tan pronto como hayamos terminado de fabricarlo. También ofrecemos devoluciones gratuitas si no estás satisfecho.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <img src="https://images.freeimages.com/images/premium/previews/2325/23251317-quality-guarantee-stamp.jpg?fmt=webp&h=350" alt="Garantía de Calidad" class="benefit-logo" />
+        <div class="benefit-text">
+          <h3>Garantía de Calidad</h3>
+          <p>Por cada compra que realices, nos aseguraremos de que no haya daños ni defectos y verificaremos y probaremos el tono de tu instrumento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Precios -->
+<section id="pricing">
+  <h2>Precios y Productos</h2>
+  <div class="pricing-container">
+    <!-- Producto 1 -->
+    <div class="pricing-item">
+      <h3>Producto S</h3>
+      <p class="price">$299.99</p>
+      <ul>
+        <li>Material Premium</li>
+        <li>Envío rápido</li>
+        <li>Garantía de calidad</li>
+        <li>Devolución gratuita</li>
+      </ul>
+      <button class="buy-btn">Comprar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="pricing-item">
+      <h3>Producto M</h3>
+      <p class="price">$399.99</p>
+      <ul>
+        <li>Diseño ergonómico</li>
+        <li>Envío rápido</li>
+        <li>Garantía extendida</li>
+        <li>Soporte 24/7</li>
+      </ul>
+      <button class="buy-btn">Comprar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="pricing-item">
+      <h3>Producto XL</h3>
+      <p class="price">$599.99</p>
+      <ul>
+        <li>Material resistente</li>
+        <li>Envío internacional</li>
+        <li>Garantía premium</li>
+        <li>Devoluciones fáciles</li>
+      </ul>
+      <button class="buy-btn">Comprar</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Sección de Formulario -->
+    <section id="form-section">
+      <h2 class="subscribe">Suscríbete</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Introduce tu correo electrónico"
+            required
+          />
+        </div>
+        <input type="submit" id="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="footer">
+      <p>&copy; 2024 Página de Producto</p>
+    </footer>
+  </body>
+</html>
